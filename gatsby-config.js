@@ -41,5 +41,13 @@ module.exports = {
       },
       __key: "blog",
     },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          `gatsby-remark-autolink-headers`,    
+        ],
+      },
+    }
   ],
 };
