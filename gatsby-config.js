@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
-    title: "tutorial",
+    title: "Gatsby Tutorial",
   },
   plugins: [
     "gatsby-plugin-gatsby-cloud",
@@ -32,6 +32,14 @@ module.exports = {
         path: "./src/pages/",
       },
       __key: "pages",
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "blog",
+        path: `${__dirname}/blog`,
+      },
+      __key: "blog",
     },
   ],
 };
